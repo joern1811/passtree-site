@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Passtree – Support</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header><img src="icon.png" alt=""><a href="./">Passtree</a></header>
+<nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="#de">Deutsch</a></nav>
+
+<section lang="en">
+<h1>Support</h1>
+<p>Questions, bug reports or feature ideas: write to <a href="mailto:CONTACT_EMAIL"><span class="todo">CONTACT_EMAIL</span></a>. Please include your iOS version and the app version (Settings → About). Never send passwords or private keys.</p>
+
+<h2>Getting started</h2>
+<ol>
+<li>Tap <strong>Add Store</strong> and enter the URL of your pass Git repository (HTTPS or SSH).</li>
+<li>Choose how to authenticate with Git: an SSH key (generate one in the app and add the public key to your server) or an HTTPS token.</li>
+<li>Choose how to decrypt: import your OpenPGP private key, or use a YubiKey via NFC or USB-C.</li>
+<li>Enable AutoFill in iOS Settings → General → AutoFill &amp; Passwords.</li>
+</ol>
+<p>Want to look around first? Tap <strong>Try Demo Store</strong> on the start screen.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Does the app send my passwords anywhere?</strong><br>No. Entries are decrypted only on your device. The app talks only to your own Git server. See the <a href="privacy.html">privacy policy</a>.</p>
+<p><strong>Which repositories work?</strong><br>Any Git repository created with <code>pass</code>, including multiple stores and <code>.gpg-id</code> files in subfolders.</p>
+<p><strong>Can I add or edit entries?</strong><br>Yes. New and changed entries are encrypted for all recipients in <code>.gpg-id</code>, committed and pushed. If the server has newer changes, the app syncs and shows any conflicts to resolve.</p>
+<p><strong>The YubiKey is not detected.</strong><br>Hold the key to the top of the iPhone until the prompt confirms, or plug it in via USB-C. The OpenPGP applet must contain your decryption key.</p>
+</section>
+
+<section lang="de" id="de" class="lang">
+<h1>Support</h1>
+<p>Fragen, Fehlerberichte oder Ideen: schreib an <a href="mailto:CONTACT_EMAIL"><span class="todo">CONTACT_EMAIL</span></a>. Gib bitte deine iOS-Version und die App-Version an (Einstellungen → Über Passtree). Schick niemals Passwörter oder private Schlüssel.</p>
+
+<h2>Erste Schritte</h2>
+<ol>
+<li>Tippe auf <strong>Store hinzufügen</strong> und gib die URL deines pass-Git-Repositorys ein (HTTPS oder SSH).</li>
+<li>Wähle die Git-Anmeldung: einen SSH-Schlüssel (in der App erzeugen und den öffentlichen Schlüssel beim Server hinterlegen) oder ein HTTPS-Token.</li>
+<li>Wähle die Entschlüsselung: privaten OpenPGP-Schlüssel importieren oder einen YubiKey über NFC oder USB-C verwenden.</li>
+<li>Aktiviere AutoFill in den iOS-Einstellungen → Allgemein → Automatisch ausfüllen &amp; Passwörter.</li>
+</ol>
+<p>Erst mal umschauen? Tippe auf dem Startbildschirm auf <strong>Demo-Store ausprobieren</strong>.</p>
+
+<h2>Häufige Fragen</h2>
+<p><strong>Schickt die App meine Passwörter irgendwohin?</strong><br>Nein. Einträge werden nur auf deinem Gerät entschlüsselt. Die App spricht nur mit deinem eigenen Git-Server. Siehe <a href="privacy.html#de">Datenschutzerklärung</a>.</p>
+<p><strong>Welche Repositorys funktionieren?</strong><br>Jedes mit <code>pass</code> angelegte Git-Repository, auch mehrere Stores und <code>.gpg-id</code>-Dateien in Unterordnern.</p>
+<p><strong>Kann ich Einträge anlegen und ändern?</strong><br>Ja. Neue und geänderte Einträge werden für alle Empfänger aus <code>.gpg-id</code> verschlüsselt, committet und gepusht. Liegen auf dem Server neuere Änderungen, synchronisiert die App und zeigt eventuelle Konflikte zum Auflösen an.</p>
+<p><strong>Der YubiKey wird nicht erkannt.</strong><br>Halte den Schlüssel an die Oberkante des iPhones, bis die Meldung bestätigt, oder steck ihn per USB-C an. Das OpenPGP-Applet muss deinen Entschlüsselungsschlüssel enthalten.</p>
+</section>
+</main>
+</body>
+</html>

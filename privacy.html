@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Passtree – Privacy Policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header><img src="icon.png" alt=""><a href="./">Passtree</a></header>
+<nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="#de">Deutsch</a></nav>
+
+<section lang="en">
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: October 28, 2026</p>
+
+<p>Passtree is a client for the <a href="https://www.passwordstore.org">pass</a> password manager. It does not collect any personal data. There are no accounts, no servers run by us, no analytics, no advertising and no tracking.</p>
+
+<h2>Data on your device</h2>
+<ul>
+<li><strong>Password store:</strong> the app clones your Git repository to your iPhone. Entries stay encrypted with OpenPGP and are decrypted only on the device when you open or fill them.</li>
+<li><strong>Keys and credentials:</strong> your OpenPGP private key, its passphrase, SSH keys, HTTPS tokens and the YubiKey PIN are stored in the iOS Keychain with “this device only” protection, so they are not included in backups or iCloud Keychain. Your OpenPGP key, its passphrase and the PIN can only be used after Face ID or your device passcode.</li>
+<li><strong>Settings:</strong> store names, remote URLs and preferences are stored locally. They are shared with the app’s AutoFill extension through an App Group on the same device.</li>
+</ul>
+
+<h2>Network connections</h2>
+<p>The app connects only to the Git remotes you configure, using HTTPS or SSH, to clone, pull and push your store. That data goes directly from your device to the server you chose (for example GitHub, GitLab or your own server); its operator’s privacy policy applies. A background refresh may sync your stores while the app is not open. The app contacts no other servers.</p>
+
+<h2>Face ID, NFC and clipboard</h2>
+<ul>
+<li><strong>Face ID</strong> is handled by iOS; the app never receives biometric data.</li>
+<li><strong>NFC/USB</strong> is used only to talk to your OpenPGP security key (for example a YubiKey) to decrypt entries.</li>
+<li><strong>Clipboard:</strong> copied passwords are kept local to the device (no Universal Clipboard) and expire automatically after a configurable time.</li>
+</ul>
+
+<h2>Deleting data</h2>
+<p>Removing a store in the app deletes its local copy and its credentials. Deleting the app removes all of its data from the device. Your remote Git repository is never deleted by the app.</p>
+
+<h2>Contact</h2>
+<p>Jörn Dombrowski, <span class="todo">ADDRESS</span><br>
+E-mail: <a href="mailto:CONTACT_EMAIL"><span class="todo">CONTACT_EMAIL</span></a></p>
+</section>
+
+<section lang="de" id="de" class="lang">
+<h1>Datenschutzerklärung</h1>
+<p class="meta">Stand: 28. Oktober 2026</p>
+
+<p>Passtree ist ein Client für den Passwortmanager <a href="https://www.passwordstore.org">pass</a>. Die App erhebt keine personenbezogenen Daten. Es gibt keine Konten, keine von uns betriebenen Server, keine Analyse, keine Werbung und kein Tracking.</p>
+
+<h2>Daten auf deinem Gerät</h2>
+<ul>
+<li><strong>Passwort-Store:</strong> Die App klont dein Git-Repository auf dein iPhone. Die Einträge bleiben mit OpenPGP verschlüsselt und werden nur auf dem Gerät entschlüsselt, wenn du sie öffnest oder ausfüllst.</li>
+<li><strong>Schlüssel und Zugangsdaten:</strong> Dein privater OpenPGP-Schlüssel, seine Passphrase, SSH-Schlüssel, HTTPS-Tokens und die YubiKey-PIN liegen im iOS-Schlüsselbund mit dem Schutz „nur dieses Gerät“. Sie sind daher weder in Backups noch im iCloud-Schlüsselbund enthalten. OpenPGP-Schlüssel, Passphrase und PIN lassen sich nur nach Face ID oder Eingabe des Gerätecodes verwenden.</li>
+<li><strong>Einstellungen:</strong> Store-Namen, Remote-URLs und Einstellungen werden lokal gespeichert und über eine App Group auf demselben Gerät mit der AutoFill-Erweiterung der App geteilt.</li>
+</ul>
+
+<h2>Netzwerkverbindungen</h2>
+<p>Die App verbindet sich ausschließlich mit den Git-Remotes, die du einrichtest, über HTTPS oder SSH, um deinen Store zu klonen, zu aktualisieren und Änderungen zu übertragen. Diese Daten gehen direkt von deinem Gerät an den Server deiner Wahl (z. B. GitHub, GitLab oder einen eigenen Server); dort gilt die Datenschutzerklärung des jeweiligen Betreibers. Eine Hintergrundaktualisierung kann deine Stores synchronisieren, während die App nicht geöffnet ist. Andere Server kontaktiert die App nicht.</p>
+
+<h2>Face ID, NFC und Zwischenablage</h2>
+<ul>
+<li><strong>Face ID</strong> wird von iOS abgewickelt; die App erhält keine biometrischen Daten.</li>
+<li><strong>NFC/USB</strong> dient nur der Kommunikation mit deinem OpenPGP-Sicherheitsschlüssel (z. B. einem YubiKey), um Einträge zu entschlüsseln.</li>
+<li><strong>Zwischenablage:</strong> Kopierte Passwörter bleiben auf dem Gerät (kein Universal Clipboard) und verfallen automatisch nach einer einstellbaren Zeit.</li>
+</ul>
+
+<h2>Löschen</h2>
+<p>Wenn du einen Store in der App entfernst, werden seine lokale Kopie und seine Zugangsdaten gelöscht. Beim Löschen der App werden alle ihre Daten vom Gerät entfernt. Dein Git-Repository auf dem Server löscht die App nie.</p>
+
+<h2>Verantwortlicher und Kontakt</h2>
+<p>Jörn Dombrowski, <span class="todo">ANSCHRIFT</span><br>
+E-Mail: <a href="mailto:CONTACT_EMAIL"><span class="todo">CONTACT_EMAIL</span></a></p>
+<p>Da die App keine personenbezogenen Daten an uns übermittelt, verarbeiten wir keine Daten über dich. Für Anfragen zu deinen Rechten nach der DSGVO (Auskunft, Berichtigung, Löschung, Beschwerde bei einer Aufsichtsbehörde) erreichst du uns unter der oben genannten Adresse.</p>
+</section>
+</main>
+</body>
+</html>
